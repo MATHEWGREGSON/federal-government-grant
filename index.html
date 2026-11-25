@@ -3,299 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Public Grant &amp; Assistance Guidance | Independent Resource</title>
+  <title>Federal Grant &amp; Assistance Guide</title>
   <style>
-    * {
-      box-sizing: border-box;
+    :root {
+      --navy: #1b365d;
+      --slate: #334155;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #cbd5e1;
+      --accent: #0f4c81;
     }
+    * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f6f9;
-      color: #1e293b;
-      line-height: 1.65;
-    }
-    .top-notice {
-      background-color: #0f172a;
-      color: #f8fafc;
-      font-size: 13px;
-      text-align: center;
-      padding: 10px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--slate);
+      background: var(--bg);
     }
     header {
-      background: linear-gradient(135deg, #102a43 0%, #243b53 100%);
+      background: var(--navy);
       color: #ffffff;
-      padding: 46px 20px;
+      padding: 2.5rem 1.25rem;
       text-align: center;
     }
-    .tag {
-      display: inline-block;
-      background-color: rgba(255, 255, 255, 0.14);
-      color: #f0f4f8;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      border-radius: 999px;
-      margin-bottom: 14px;
-    }
     header h1 {
-      margin: 0 auto 12px;
-      max-width: 740px;
-      font-size: 31px;
-      line-height: 1.25;
+      margin: 0 0 0.5rem;
+      font-size: 1.9rem;
     }
     header p {
-      margin: 0 auto 22px;
-      max-width: 640px;
-      color: #d9e2ec;
-      font-size: 16px;
-    }
-    .btn-group {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .btn-primary {
-      background-color: #d97706;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 12px 22px;
-      border-radius: 6px;
-      font-size: 15px;
-    }
-    .btn-secondary {
-      background-color: transparent;
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.45);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 12px 22px;
-      border-radius: 6px;
-      font-size: 15px;
+      margin: 0 auto;
+      max-width: 680px;
+      color: #e2e8f0;
     }
     main {
       max-width: 860px;
-      margin: 28px auto;
-      padding: 0 16px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
     }
-    .alert-box {
-      background-color: #fffbeb;
-      border-left: 4px solid #d97706;
-      padding: 16px 18px;
-      border-radius: 6px;
-      margin-bottom: 22px;
-      font-size: 14px;
-      color: #78350f;
-    }
-    .card {
-      background: #ffffff;
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 26px;
-      margin-bottom: 22px;
-      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
-      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
     }
     h2 {
-      color: #102a43;
-      font-size: 21px;
       margin-top: 0;
-      margin-bottom: 12px;
+      color: var(--navy);
+      font-size: 1.3rem;
     }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 16px;
-      margin-top: 14px;
+    ul {
+      padding-left: 1.25rem;
+      margin: 0.5rem 0;
     }
-    .info-box {
-      background-color: #f8fafc;
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-      padding: 16px;
-    }
-    .info-box h3 {
-      margin: 0 0 6px;
-      font-size: 16px;
-      color: #102a43;
-    }
-    .info-box p {
-      margin: 0;
-      font-size: 14px;
-      color: #334155;
-    }
-    .steps {
-      padding-left: 20px;
-      margin: 12px 0;
-    }
-    .steps li {
-      margin-bottom: 10px;
-    }
-    .portal-links {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 14px;
-      margin-top: 14px;
-    }
-    .portal-card {
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-      padding: 16px;
-      background-color: #f8fafc;
-    }
-    .portal-card strong {
-      display: block;
-      color: #102a43;
-      font-size: 16px;
-      margin-bottom: 4px;
-    }
-    .portal-card p {
-      font-size: 13px;
-      margin: 4px 0 10px;
-      color: #475569;
-    }
-    .portal-card a {
-      color: #0369a1;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 14px;
-      margin-top: 14px;
-    }
-    .contact-item {
-      background-color: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 6px;
-      padding: 16px;
-    }
-    .contact-item span {
-      display: block;
-      font-size: 12px;
-      text-transform: uppercase;
-      color: #64748b;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-    .contact-item a {
-      color: #102a43;
-      font-weight: 600;
-      text-decoration: none;
-      word-break: break-word;
+    li { margin-bottom: 0.5rem; }
+    a { color: var(--accent); font-weight: 600; }
+    .notice {
+      background: #eff6ff;
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
     }
     footer {
-      background-color: #102a43;
-      color: #cbd5e1;
-      padding: 28px 20px;
-      font-size: 13px;
-      margin-top: 36px;
-    }
-    .footer-inner {
-      max-width: 860px;
-      margin: 0 auto;
-    }
-    footer p {
-      margin: 0 0 10px;
+      text-align: center;
+      padding: 1.5rem 1.25rem 2.5rem;
+      color: #64748b;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-
-  <div class="top-notice">
-    Independent Citizen Guidance Resource &mdash; Not an Official U.S. Government Website
-  </div>
-
   <header>
-    <div class="tag">Independent Assistance &amp; Guidance</div>
-    <h1>Clear Guidance for Citizens Navigating Public Grants &amp; Assistance</h1>
-    <p>Helpful overview of eligibility pathways, official portals, and key steps for individuals, families, and community organizations.</p>
-    <div class="btn-group">
-      <a href="#official-portals" class="btn-primary">Official Portals</a>
-      <a href="#contact" class="btn-secondary">Contact Support</a>
-    </div>
+    <h1>Federal Grant &amp; Assistance Guide</h1>
+    <p>Clear, structured information to help citizens and organizations understand federal funding programs and reach official government resources.</p>
   </header>
 
   <main>
-    <div class="alert-box">
-      <strong>Important Notice:</strong> This site is an independent informational resource and is <strong>not</strong> affiliated with the U.S. government, Grants.gov, SAM.gov, or any federal agency. Official government applications and benefit lookups are handled directly through <code>.gov</code> websites.
+    <div class="notice">
+      <strong>Informational Resource Notice:</strong> This page is an independent citizen guide and is not an official U.S. government website. Always verify program details and submit applications directly on official <strong>.gov</strong> websites.
     </div>
 
-    <section class="card">
-      <h2>How Public Assistance &amp; Grant Pathways Work</h2>
-      <p>Programs vary depending on whether you are applying as an individual household or as a registered organization:</p>
-      <div class="grid-2">
-        <div class="info-box">
-          <h3>Individuals &amp; Households</h3>
-          <p>Direct assistance for individuals—such as housing, utilities, food, healthcare, or education support—is typically offered through public benefit and assistance programs.</p>
-        </div>
-        <div class="info-box">
-          <h3>Nonprofits, Schools &amp; Entities</h3>
-          <p>Federal grants listed on Grants.gov generally support registered organizations, municipalities, tribes, and institutions that register on SAM.gov and follow program guidelines.</p>
-        </div>
-      </div>
+    <section>
+      <h2>How Federal Grants &amp; Assistance Work</h2>
+      <p>Federal funding programs support public priorities through grants, cooperative agreements, loans, and assistance listings. Most federal grants are awarded to eligible organizations—such as nonprofits, schools, and local agencies—rather than directly to individuals.</p>
+      <ul>
+        <li><strong>Individuals &amp; Families:</strong> Look for personal benefits, financial assistance, and aid programs through official government portals.</li>
+        <li><strong>Organizations &amp; Entities:</strong> Review eligibility rules, register required entity records, and track open funding announcements before applying.</li>
+        <li><strong>Free Official Forms:</strong> Official government information and application portals do not charge fees just to view or download standard forms.</li>
+      </ul>
     </section>
 
-    <section class="card">
-      <h2>Key Steps for Applicants</h2>
-      <ol class="steps">
-        <li><strong>Confirm Eligibility &amp; Program Type:</strong> Check whether the support you need is an individual benefit program or an organizational grant opportunity.</li>
-        <li><strong>Complete Required Registrations:</strong> Organizations applying for federal grants register on SAM.gov and set up a Grants.gov account.</li>
-        <li><strong>Review Requirements &amp; Deadlines:</strong> Carefully read program rules, documentation needs, and submission timelines before applying.</li>
-        <li><strong>Use Official <code>.gov</code> Channels:</strong> Submit applications and verify status directly through authorized government portals.</li>
-      </ol>
-    </section>
-
-    <section class="card" id="official-portals">
+    <section>
       <h2>Official Government Portals</h2>
-      <p>Visit these official websites to explore assistance programs, search grant listings, or manage entity registrations:</p>
-      <div class="portal-links">
-        <div class="portal-card">
-          <strong>USA.gov</strong>
-          <p>Official directory for government benefits, assistance programs, and citizen services.</p>
-          <a href="https://www.usa.gov/benefits" target="_blank" rel="noopener noreferrer">Go to USA.gov &rarr;</a>
-        </div>
-        <div class="portal-card">
-          <strong>Grants.gov</strong>
-          <p>Official portal for federal grant opportunities and application packages.</p>
-          <a href="https://www.grants.gov" target="_blank" rel="noopener noreferrer">Go to Grants.gov &rarr;</a>
-        </div>
-        <div class="portal-card">
-          <strong>SAM.gov</strong>
-          <p>Official System for Award Management for entity registration and Unique Entity IDs.</p>
-          <a href="https://sam.gov" target="_blank" rel="noopener noreferrer">Go to SAM.gov &rarr;</a>
-        </div>
-      </div>
+      <p>Use these official federal websites to search programs, check eligibility, and read primary agency rules:</p>
+      <ul>
+        <li><a href="https://www.grants.gov/" target="_blank" rel="noopener noreferrer">Grants.gov</a> — Search federal grant opportunities and review applicant guidance.</li>
+        <li><a href="https://sam.gov/federal-assistance" target="_blank" rel="noopener noreferrer">SAM.gov Federal Assistance</a> — Browse federal assistance listings and program details across agencies.</li>
+        <li><a href="https://www.grants.gov/learn-grants/grant-programs" target="_blank" rel="noopener noreferrer">Grants.gov Program Overview &amp; Personal Benefits Links</a> — Compare federal grant programs and find guidance for personal benefits.</li>
+      </ul>
     </section>
 
-    <section class="card" id="contact">
-      <h2>Contact Information</h2>
-      <p>For questions about the guidance on this page, reach out using the contact details below:</p>
-      <div class="contact-grid">
-        <div class="contact-item">
-          <span>Email</span>
-          <a href="mailto:Federalgovernmentgrantt@hotmail.com">Federalgovernmentgrantt@hotmail.com</a>
-        </div>
-        <div class="contact-item">
-          <span>Phone</span>
-          <a href="tel:+14694375728">+1 469-437-5728</a>
-        </div>
-      </div>
+    <section>
+      <h2>General Guidance Contact</h2>
+      <p>If you have questions about using this guide, reach out via:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:Federalgovernmentgrantt@hotmail.com">Federalgovernmentgrantt@hotmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+14694375728">+1 469-437-5728</a></li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <p>&copy; 2026 Mathew Gregson. All Rights Reserved.</p>
-      <p><strong>Disclaimer:</strong> This website is provided for general informational purposes only and is not an official government portal. Nothing on this site guarantees funding, eligibility, or legal representation.</p>
-    </div>
+    <p>&copy; 2026 Federal Grant &amp; Assistance Guide. Independent educational resource; not affiliated with the U.S. government.</p>
   </footer>
-
 </body>
 </html>
